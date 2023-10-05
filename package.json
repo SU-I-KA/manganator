@@ -1,0 +1,24 @@
+{
+   "name": "manganator-server",
+   "version": "1.0.0",
+   "description": "manganator - server side",
+   "main": "index.js",
+   "engines": {
+    "node": "16.13.1",
+    "npm": "7.23.0"
+  },
+   "scripts": {
+      "start": "node server.js",
+	  "build": "cd client && npm install && npm run build"
+   },
+   "author": "Basem-Agwa",
+   "license": "ISC",
+   "devDependencies": {
+      "nodemon": "^2.0.15"
+   },
+   "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1"
+   }
+}

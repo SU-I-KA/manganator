@@ -1,0 +1,46 @@
+.head {
+   width: 96vw;
+   max-width: 1004px;
+   padding: 10px;
+   margin: 20px auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navBtns {
+   text-align: center;
+   display: block;
+   margin: 15px auto 30px;
+}
+
+.navBtns button,
+.topNavigator button {
+   padding: 8px 12px;
+   margin: 0px 8px;
+   outline: none;
+   background: #c1344b;
+   color: #fff;
+   transition: all 200ms ease;
+   font-weight: 400;
+   text-align: center;
+   border: 1px solid transparent;
+   font-size: 1rem;
+   border-radius: 10px;
+}
+
+.navBtns button:disabled,
+button[disabled],
+.topNavigator button:disabled {
+   background: #df8896;
+   cursor: auto;
+}
+
+.navBtns button:enabled:hover,
+.topNavigator button:enabled:hover {
+   background: #eb3349;
+}
+
+.topNavigator button {
+   padding: 6px 8px 3px !important;
+   margin: 0px 5px !important;
+}

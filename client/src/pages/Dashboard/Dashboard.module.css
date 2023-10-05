@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+.container {
+   padding: 0 10px;
+   background: #252527 url(../../images/auth-bg.png);
+   min-height: 100vh;
+   font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma,
+      Sans-Serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.loginWrap {
+   max-width: 800px;
+   margin: 0 auto;
+   width: 100%;
+   padding: 20px;
+   position: relative;
+}
+
+.header {
+   /* margin: 50px 0 20px; */
+   flex: 0 0 100%;
+   margin: 100px 0 40px;
+}
+
+.title {
+   font-size: 25px;
+   text-transform: uppercase;
+   line-height: 31px;
+   color: hsl(240deg 2% 56%);
+   letter-spacing: 0.3rem;
+   font-weight: 600;
+}
+
+.header h1 {
+   font-size: 4.5rem;
+   margin: 0;
+   color: #fff;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+form {
+   width: 55%;
+}
+
+.formGroup {
+   margin: 0 0 20px;
+}
+
+.formControl {
+   padding: 10px;
+   width: 100%;
+   font-size: 1.3rem;
+   max-width: 100%;
+   outline: 0;
+   background-color: hsl(227deg 12% 85%);
+   border: 3px solid hsl(227deg 12% 85%);
+   border-radius: 3px;
+}
+
+.formControl::placeholder {
+   font-weight: 400;
+   color: hsl(233deg 10% 64%);
+   font-size: 15px;
+   text-transform: capitalize;
+}
+
+.loginBtn {
+   display: block;
+   width: 100%;
+   font-size: 1.1rem;
+   align-items: center;
+   position: relative;
+   text-shadow: none;
+   line-height: 1.2;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   text-decoration: none !important;
+   font-weight: 400 !important;
+   cursor: pointer;
+   padding: 10px 16px;
+   margin: 1px 10px 1px 0;
+   border-radius: 4px;
+   border: 3px solid transparent;
+   outline: 0;
+   text-transform: capitalize;
+}
+
+.loginBtn {
+   background-color: hsl(139deg 59% 55%);
+   color: #000;
+}
+
+.loginBtn:hover {
+   background-color: hsl(140deg 59% 35%);
+   color: #fff;
+}
+
+.copyright {
+   color: #fff;
+   text-transform: capitalize;
+   font-size: 12px;
+   /* margin-top: -15px; */
+   position: fixed;
+   bottom: 8px;
+   left: 8px;
+}
+
+.boards {
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+
+.board {
+   position: relative;
+   /* width: 100%; */
+   padding-right: 15px;
+   padding-left: 15px;
+   flex: 0 0 50%;
+   max-width: 50%;
+   margin-bottom: 30px;
+   cursor: pointer;
+}
+
+@media (min-width: 576px) {
+   .board {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25% !important;
+      max-width: 25% !important;
+   }
+}
+
+@media (min-width: 992px) {
+   .board {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667% !important;
+      max-width: 16.666667% !important;
+   }
+}
+
+.preview {
+   width: 100%;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   overflow: hidden;
+   margin-right: 20px;
+   position: relative;
+   height: 85%;
+}
+
+.preview img {
+   max-width: 100%;
+   display: inline-block;
+   /* height: auto; */
+   height: 100%;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   filter: opacity(1);
+   transition: transform 0.5s, filter 0.5s;
+}
+
+.preview img:hover {
+   animation: fadeForLazyload 0.5s linear;
+   -webkit-animation: fadeForLazyload 0.5s linear;
+   -webkit-transform: scale(1.3);
+   transform: scale(1.3);
+   filter: opacity(0.7);
+}
+
+.info {
+   padding-left: 5px;
+}
+
+.info h3 a {
+   color: #fff;
+   font-size: 16px;
+   text-transform: capitalize;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info h3 a:hover {
+   text-decoration: underline;
+}
+
+@keyframes fadeForLazyload {
+   0% {
+      opacity: 0.3;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 670px) {
+   form {
+      width: 340px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   form {
+      width: 100%;
+   }
+   .header h1 {
+      font-size: 3.9rem;
+   }
+}
